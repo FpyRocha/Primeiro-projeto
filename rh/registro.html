@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ABC Tecnologia</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <nav class="nav">
+        <a class="nav-link" href="../index.html">Institucional</a>
+        <a class="nav-link" href="registro.html">Registro</a>
+        <a class="nav-link" href="candidatos.html">Candidatos</a>
+    </nav>
+
+    <div class="container border border-primary">
+    <h1 class="text-center">Registro de Candidatos</h1>
+
+    <form action="" method="post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input class="form-control" required type="text" name="nome" id="nome">
+        </p>
+        <p>
+            <label for="nascimento">Data de Nascimento:</label>
+            <input class="form-control" required type="date" name="nascimento" id="nascimento">
+        </p>
+        <p>
+            <label for="telefone">Telefone:</label>
+            <input class="form-control"  required type="tel" name="telefone" id="telefone">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input class="form-control" required type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="vaga">Vaga:</label>
+            <select class="custom-select" required name="vaga" id="vaga">
+                
+            </select>
+        </p>
+
+        <button type="submit">Enviar dados</button>
+    </form>
+</div>
+
+    <script src="../js/lista-vagas.js"></script>
+    <script src="../js/cadastro.js"></script>
+
+</body>
+
+</html>

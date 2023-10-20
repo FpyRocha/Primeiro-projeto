@@ -1,0 +1,54 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Programador PHP"
+    },
+    {
+      "id": 2,
+      "titulo": "Dev. Front-End"
+    },
+    {
+      "id": 3,
+      "titulo": "Dev. Back-End"
+    },
+    {
+      "id": 4,
+      "titulo": "UX/UI Designer"
+    }
+  ],
+  "candidatos": [
+    {
+      "nome": "Felipe Miranda Rocha",
+      "nascimento": "2023-10-04",
+      "telefone": "(11)94444-7585",
+      "email": "fel.top@gmail.com",
+      "vaga": "Programador PHP",
+      "id": 1
+    },
+    {
+      "nome": "Felipe Miranda Rocha",
+      "nascimento": "2023-10-04",
+      "telefone": "(11)94444-7585",
+      "email": "fel.top@gmail.com",
+      "vaga": "Programador PHP",
+      "id": 2
+    },
+    {
+      "nome": "Felipe Miranda Rocha",
+      "nascimento": "2023-10-04",
+      "telefone": "(11)94444-7585",
+      "email": "fel.top@gmail.com",
+      "vaga": "Programador PHP",
+      "id": 3
+    },
+    {
+      "nome": "Felipe Miranda Rocha",
+      "nascimento": "2023-10-04",
+      "telefone": "(11)94444-7585",
+      "email": "fel.top@gmail.com",
+      "vaga": "Programador PHP",
+      "id": 4
+    }
+  ]
+}

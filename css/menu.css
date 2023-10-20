@@ -1,0 +1,67 @@
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(127, 255, 212, 0.288);
+
+    /* Resolvendo o problema do float */
+    overflow: hidden;
+}
+
+.menu a {
+    color: rgb(7, 3, 238);
+    text-decoration: none;
+    padding: 14px;
+    display: block;
+}
+
+.menu a:hover, .menu a:focus {
+    background-color: rgb(30, 255, 0);
+    color: rgb(10, 14, 228);
+}
+
+/* Fazer os itens do menu ficarem lado a lado */
+.menu li { float: left;}
+
+/* Esconde o item com a classe icone */
+.menu li.icone { display: none; } 
+
+/* Quando o site for visualizado em telas
+de até 760px */
+@media screen and (max-width: 760px)
+ {
+/* Esconder todos os itens do menu */
+    .menu li { display: none; }
+
+/* Tornar visivel APENAS o item 
+    com a classe icone */
+    .menu li.icone {
+        display: block;
+        float: right;
+    }
+
+    /* Regra "fechada", ou seja, é uma regra
+    que só entrará em funcionamento quando
+    as duas classes estiverem JUNTAS 
+    (menu aberto). Quando isso ocorrer, desativamos o float e exibimos como bloco (um em cima do outro) */
+    .menu.aberto li {
+        float: none;
+        display: block;
+    }
+
+/* Quando as duas classes estiverem JUNTAS,
+    reposicionamos o icone (texto Menu) na parte
+    superior/direita. */
+    .menu.aberto li.icone {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    /* Quando as duas classes estiverem JUNTAS,
+    indicamos que a referência de posicionamento
+    é o próprio menu. Esta regra complementa
+    a anterior quanto à posição final do texto
+    Menu. */
+    .menu.aberto { position: relative; }
+}

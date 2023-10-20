@@ -1,0 +1,63 @@
+/* CSS Reset em alguns elementos */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 255, 0.178);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    background-color: rgb(0, 0, 255);
+    color: rgb(6, 243, 46);
+    padding-left: 16px;
+    
+}
+
+main {
+    width: 85%;
+    margin: auto;
+}
+ /* Formato o rodapé com as seguintes características
+ - Altura de 200px 
+ -Fundo com efeito de cor gradiente (cores à sua escolha)
+ -Cor do texto à sua escolha
+ -alinhamento de texto no meio*/
+footer {
+height: 100px;
+background: linear-gradient(rgb(51, 255, 0),blue);
+color: turquoise; 
+text-align: center;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/* Regra usando seletor ID */
+#imagem-decorativa {
+    height: 380px;
+    background-image: url(../imagens/trabalho.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+ }
+
+
+ .treinamentos {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .treinamentos section {
+    width: 30%;
+    background-color:rgb(180, 179, 179);
+    text-align: center;
+    border-radius: 4px;
+    box-shadow:rgb(7, 121, 13) 1px 1px 10px ;
+    
+ }
+
+ iframe { width: 100%; }
